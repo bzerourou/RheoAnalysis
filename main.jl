@@ -12,7 +12,14 @@ function RheoLogItem(s::String)
 end 
 
 
+struct RheoTimeData
 
+    σ::Vector{RheoFloat}
+    ϵ::Vector{RheoFloat}
+    t::Vector{RheoFloat}
 
+    log::Union{RheoLog,Nothing}
+
+end
 
 print("Hello world!")
